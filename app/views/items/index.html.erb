@@ -2,22 +2,13 @@
   <div class="row">
     <div class="col-sm-12">
 
-
-    <!-- search form end  -->
-      <!-- 1. Basic form: form_tag; text_field_tag
-      2. Change Method
-      3. Note: on strong params
-      4. Add index method for search
-      5. Retain search term in the search field by adding value to that input field
-      6. Eliminate the name of the submit from the URL, via name: nil -->
     <!-- search form start IT-2-->
-    <%= form_tag items_path, method: :get do %>
-      <%= label_tag :search_term, "Search for:"%><br>
-      <%= text_field_tag :search_term, params[:search_term] %>
-      <%= submit_tag "Search", name: nil %>
+    <%= form_tag items_path %>
+      <%= label_tag %> <br>
+      <%= text_field_tag :search_term %>
+      <%= submit_tag %>
     <% end %>
-    <!-- params[:search_term] to retain the search term in the search field -->
-    <!-- in html: <input value="search_term"> -->
+  
     <!-- search form end  -->
 
 
